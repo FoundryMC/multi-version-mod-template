@@ -71,6 +71,8 @@ tasks.named<ProcessResources>("processTestmodResources") {
         "id" to findProperty("mod.id"),
         "license" to findProperty("mod.license"),
         "description" to findProperty("mod.description"),
+        "sources_url" to findProperty("mod.sources_url"),
+        "issues_url" to findProperty("mod.issues_url"),
         "neoforge" to (findProperty("deps.neoforge") ?: "missing"),
         "neoforge_loader" to (findProperty("deps.neoforge_loader") ?: "missing"),
         "fapi" to (findProperty("deps.fabric_api") ?: "missing"),
