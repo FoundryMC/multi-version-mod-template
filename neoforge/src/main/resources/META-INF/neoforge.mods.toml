@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "${neoforge_loader}"
 license = "${license}"
-issueTrackerURL="https://github.com/Ocelot5836/imguimc/issues"
+issueTrackerURL="${issues_url}"
 
 [[mods]]
 modId = "${id}"
@@ -28,9 +28,3 @@ type="required"
 versionRange = "${minecraft}"
 ordering = "NONE"
 side = "BOTH"
-
-[[dependencies.${id}]]
-modId = "veil"
-type = "incompatible"
-versionRange = "[,4.0.0)"
-reason = "ImGui implementation conflict"
