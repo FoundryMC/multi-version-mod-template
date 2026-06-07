@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}-testmod",
+  "version": "${version}",
+  "name": "${name} TestMod",
+  "authors": [
+    "${author}"
+  ],
+  "contact": {
+    "issues": "${issues_url}",
+    "sources": "${sources_url}"
+  },
+  "license": "${license}",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.ExampleModFabric"
+    ]
+  },
+  "mixins": [
+    "testmod.mixins.json"
+  ],
+  "depends": {
+    "fabric-api-base": "*",
+    "fabricloader": ">=0.17",
+    "minecraft": "${minecraft}",
+    "java": ">=${java}",
+    "${id}": "*"
+  }
+}
